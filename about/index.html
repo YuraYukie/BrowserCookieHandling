@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/jquery.multiselect.css' rel='stylesheet' type='text/css'>
+    <script src="js/officialscripts/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/clearup.js"></script>
+    <script src="js/officialscripts/jquery.multiselect.js"></script>
+
+</head>
+<body>
+<div class="modal">
+    <div class='alert' style='display:none'></div>
+    <div class="modal-content">
+        <header>
+            <img id="logotoggle" src="/images/logo.png" alt="" class="logo">
+            <span class="title"></span>
+        </header>
+        <div class="main">
+            <section class="main-section">
+                <div id="aboutcleanup_title" class="titleHeader">
+                    Clean up browser's cookies
+                </div>
+                <div class="block show" id="aboutcleanup">
+                    <p class="descHead_hard">
+                        Make your Chrome browser more faster and Protect your privacy!<br />Remove tracks in one click.
+                    </p>
+
+                  <div class="search-block">
+                    <span class="search-domain">
+                      <input id="searchDomain" class="search-input" placeholder="search with domain...">
+                      <button class="searchbtn"></button>
+                    </span>
+                    <span class="search-domain">
+                      <input id="searchName" class="search-input" placeholder="search with name...">
+                      <button class="searchbtn"></button>
+                    </span>
+                    <span class="search-domain">
+                      <input id="searchValue" class="search-input" placeholder="search with value...">
+                      <button class="searchbtn"></button>
+                    </span>
+                  </div>
+
+
+                    <div class="found-block" id="foundBlock">
+                      <div class="found" id="foundList">
+                      </div>
+                      <div class="action">
+                        <button class="btn-default" id="deleteChecked">Delete</button>
+                        <button class="btn-default" id="deleteAll">Delete all Cookies</button>
+                      </div>
+                    </div>
+                    
+                    <div class="toggle-select-box"> 
+                        <div class="selectTitle">Remove all browser's cookies from</div>
+                        <select id="timeframe">
+                            <option value="hour">the past hour</option>
+                            <option value="day">the past day</option>
+                            <option value="week">the past week</option>
+                            <option value="4weeks">the past four weeks</option>
+                            <option value="forever">the beginning of time</option>
+                        </select>
+                        
+                    </div>
+                    
+                    <button id="button">Clean Now!</button>
+                </div>
+                
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+</html>

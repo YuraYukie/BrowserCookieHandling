@@ -1,0 +1,306 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+body *{
+    font-family: 'Roboto';
+    color: #666;
+}
+
+.modal-content{
+    min-width: 600px;
+    max-height: 590px;
+    overflow-y: hidden;
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+}
+.modal-content .logo{
+    float: left;
+    margin: 1px 10px 0 0;
+    top: 15px;
+    position: absolute;
+}
+header{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+}
+.modal-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.modal-content span.title {
+    font-size: 21px;
+    margin-left: 60px;
+}
+.modal-content span.label{
+    font-size: 16px;
+}
+.modal-content header, .modal-content .block {
+    /*border-bottom: 1px solid #ececec;*/
+    padding: 25px;
+    display: block;
+
+}
+.modal-content .block{
+    padding: 20px 0;
+    padding-bottom: 0px;
+    display: none;
+}
+.modal-content .block.show {
+    display: block;
+}
+.toggle-select-box {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.block .selectTitle {
+    float: left;
+    font-size: 14px;
+    line-height: 23px;
+    margin-right: 13px;
+}
+.toggle-select-box .advanced {
+    float: right;
+    color: #2F4CA8;
+    line-height: 20px;
+}
+.toggle-select-box .advanced span {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: url(../img/4.png) no-repeat center center;
+    cursor: pointer;
+}
+
+.toggle-select-box .advanced.show span {
+    background: url('../img/3.png') no-repeat center center;     
+}
+.modal-content header .close{
+    background: url("../img/close.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+.modal-content header .close:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-content section .block{
+    padding: 0 30px 20px;
+}
+.modal-content section > .titleHeader {
+    background: #f9f9f9;
+    padding: 0 30px;
+    position: relative;
+    font-size: 18px;
+    line-height: 48px;
+    border-bottom: 1px solid #ececec;
+}
+.modal-content select {
+    width: 110px;
+    height: 26px;
+    border-radius: 3px;
+    color: #294AB3;
+    border: 1px solid #d6d6d6;
+}
+.main {
+    position: relative;
+    overflow: hidden;
+}
+.settingdiv{
+   z-index: 10;
+}
+.main .hidden.open {
+    top: 0;
+}
+.main .hidden {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    -ms-transition: top 0.5s;
+    -o-transition: top 0.5s;
+    transition: top 0.5s;
+    height: 100%;
+    background: #fff;
+}
+.aboutfeedback  li{
+    padding-left: 35px;
+    margin: 20px 0 0;
+    min-height: 22px;
+    padding-top: 2px;
+    font-size: 14px;
+}
+
+.titleHeader .toggle {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    cursor: pointer;
+}
+.titleHeader .toggle span {
+    float: right;
+    height: 20px;
+    width: 20px;
+    background: url('../img/1.png') no-repeat center center; 
+    margin: 15px 15px 0;
+}
+
+.titleHeader.aboutsettings_title {
+    z-index: 3;
+}
+.titleHeader .toggle.show span{
+    background: url('../img/2.png') no-repeat center center;     
+}
+
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+}
+
+.notePrivate{
+    font-family: 'Roboto';
+    color: #999999;
+}
+
+.simple{
+    width:500px;
+}
+.titleHead{
+    font-size: 18px;
+    color: #000;
+    float: left;
+}
+.descHead, .descHead_hard {
+    font-size: 14px;
+    color: #878787;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.descHead a span, .descHead_hard a span {
+    color: #878787;
+}
+.tooltip {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: calc(100% + 7px);
+    max-width: 280px;
+    padding: 10px;
+    background: #e1e1e1;
+    border: 1px solid #959595;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#optionData {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#aboutcleanup .advanced-block {
+    display: none;
+}
+
+#optionData tr td {
+    padding: 5px 0;
+}
+#optionData tr td input {
+    position: relative;
+    top: 2px;
+    margin: 0 5px 0 0;
+}
+#optionData tr td label {
+    color: #B6B6B6;
+    font-size: 13px;
+}
+#button, .btn-default {
+    background: #12c982;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px 20px;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 20px 15px 0;
+    outline: 0 none;
+}
+
+.found-result {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.selectall {
+  margin-left: 20px;
+  color: #2F4CA8;
+}
+
+.search-input {
+    margin: 0;
+    width: 160px;
+    border: 1px solid #cccccc;
+    height: 20px;
+    font-size: 11px;
+    border-radius: 5px;
+    outline: 0 none;
+}
+
+.search-domain {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+.search-block {
+  margin-bottom: 20px;
+}
+.searchbtn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    background: url("../img/search_icon.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    display: inline-block;
+    border: 0;
+    outline: 0 none;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  padding-right: 10px;
+  max-width: 140px;
+  overflow-x: hidden;
+}
+
+  th:nth-child(1), td:nth-child(1) {
+    width: 220px;
+    padding-right: 20px;
+  }
